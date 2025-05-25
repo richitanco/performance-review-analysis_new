@@ -1,6 +1,7 @@
 networks: 
   my-networks:
     driver: bridge
+
 volumes:
   performance_app:
   vectorstore_data:
@@ -13,6 +14,10 @@ services:
       - "7860:7860"
     networks:
       - my-networks
+    # ADD DNS SETTINGS TO FIX NETWORK CONNECTIVITY
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
     volumes:
       - .:/app
       - performance_app:/usr/local/lib/python3.12/site-packages
@@ -29,6 +34,7 @@ services:
       bash -c "pip install --upgrade pip && pip install -r /app/requirements.txt && pip install hf_xet && python -m spacy download en_core_web_md && python -u /app/main.py"
     depends_on:
       - performance-vectorstore
+      
   performance-vectorstore:
     image: chromadb/chroma
     networks:
