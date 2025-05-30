@@ -89,7 +89,7 @@ cd performance-review-analysis/app
 
 #### Option B: Download as ZIP
 
-- Go to the [GitHub repository](https://github.com/richitanco/performance-review-analysis)
+- Go to the https://github.com/richitanco/performance-review-analysis_new
 - Click the **Code** button, then **Download ZIP**
 - Extract the ZIP file
 - Open a terminal and navigate to the `app` folder
