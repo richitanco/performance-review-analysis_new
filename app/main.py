@@ -6,7 +6,7 @@ import pandas as pd
 import os
 
 # OPTIONAL: Add Google API key for AI text improvement
-GOOGLE_API_KEY = os.getenv["GOOGLE_API_KEY"]  # ← PASTE YOUR API KEY HERE IF YOU WANT AI IMPROVEMENT
+GOOGLE_API_KEY = ""  # ← PASTE YOUR API KEY HERE IF YOU WANT AI IMPROVEMENT
 
 # Create analyzer instances
 analyzer = PerformanceReviewAnalyzer()  # Your existing analyzer (unchanged)
