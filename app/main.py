@@ -5,7 +5,7 @@ from modules.vizualisations import visualize_feedback_types, display_analysis_su
 import pandas as pd
 
 # OPTIONAL: Add Google API key for AI text improvement
-GOOGLE_API_KEY = "AIzaSyCuyvcIxR05Er2SX5l2cyIO_UWjyUzSp08"  # ← PASTE YOUR API KEY HERE IF YOU WANT AI IMPROVEMENT
+GOOGLE_API_KEY = ""  # ← PASTE YOUR API KEY HERE IF YOU WANT AI IMPROVEMENT
 
 # Create analyzer instances
 analyzer = PerformanceReviewAnalyzer()  # Your existing analyzer (unchanged)
