@@ -83,7 +83,7 @@ docker-compose --version
 #### Option A: Clone with Git
 
 ```bash
-[git clone https://github.com/richitanco/performance-review-analysis.git](https://github.com/richitanco/performance-review-analysis_new.git)
+https://github.com/richitanco/performance-review-analysis_new.git
 cd performance-review-analysis/app
 ```
 
